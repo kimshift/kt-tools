@@ -1,0 +1,35 @@
+{
+  "name": "pt-utils-js",
+  "version": "0.0.1",
+  "description": "前端开发工具箱",
+  "main": "index.js",
+  "scripts": {
+    "start": "sh start.sh",
+    "build": "sh build/build.sh",
+    "release": "sh build/release.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimshift/pt-utils-js.git"
+  },
+  "keywords": [
+    "javascript",
+    "utils",
+    "tools"
+  ],
+  "author": "kimshift",
+  "license": "ISC",
+  "files": [
+    "README.md",
+    "lib/"
+  ],
+  "exports": {
+    ".": {
+      "import": "./lib/js-utils.mjs",
+      "require": "./lib/js-utils.umd.js"
+    }
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
