@@ -30,3 +30,4 @@ if [[ version =~ [beta] ]]; then # 如果版本号包含 beta  则发布到 bate
 else
   npm publish
 fi
+echo "version: '$version'发布成功！"
