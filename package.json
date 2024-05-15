@@ -36,5 +36,8 @@
   },
   "devDependencies": {
     "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "store2": "^2.14.3"
   }
 }

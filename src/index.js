@@ -2,8 +2,7 @@
  * @Description: 工具库导出配置
  * @Author: 琴时
  */
-import { version } from '../package.json'
-window.JS_UTILS_VERSION = version
+
 // 转换类
 export { numToChinese, moneyFormat } from './utils/transform'
 
@@ -11,10 +10,24 @@ export { numToChinese, moneyFormat } from './utils/transform'
 export { timeStamp, countDown, dateFormat, getTimeDistance } from './utils/time'
 
 // 常用类
-export { isEmpty, isEqual, IsType, deepCopy } from './utils/common'
+export { IsType, deepCopy, isEmpty, isEqual, deWeightArray, createUUID } from './utils/common'
 
-let a = 123
-export { a }
+// 文件类
+export { blobToText, textTransform } from './utils/files'
+
+/* 网页相关操作 */
+export { default as store, local, session, setExpires, getExpires } from './utils/store.js'
+
+export {
+  downloadStream,
+  kernelInfo,
+  isMobile,
+  isQQ,
+  isWeiXn,
+  isAndroid,
+  isIOS,
+} from './utils/browser'
+
 /* **********************测试区********************** */
 // import { isEqual } from '../lib/js-utils.mjs'
 // console.log('测试:', isEqual(6, 6))

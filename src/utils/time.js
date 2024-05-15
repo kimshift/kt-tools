@@ -120,7 +120,7 @@ export const getTimeDistance = (start_Time, end_Time) => {
 /*******
  * @description: 转换时间戳
  * @author: 琴时
- * @param {params} [时间字符串]/[时间对象]
+ * @param {*}  params [时间字符串]/[时间对象]
  * @return {*} [时间戳,当前时间戳]
  */
 /*  */

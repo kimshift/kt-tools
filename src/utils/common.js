@@ -110,3 +110,57 @@ export const isEqual = (a, b) => {
   }
   return true
 }
+
+/*******
+ * @description: 数组去重
+ * @author: 琴时
+ * @param {Array} list [需要去重的数组对象]
+ * @param {String} key [指定数组对象元素主键]
+ * 以该主键的值为标准判断数据是否重复|如果数组元素是一般数据类型,key传空即可
+ * @param {Function} callback [回调函数,用于处理去重后重复的数据(可不传)]
+ * @return {Array} 去重后的新数组对象
+ */
+export const deWeightArray = (list, key, callback) => {
+  /* 如果数组的元素是基本数据类型那就不传第二个参数 */
+  if (!key) {
+    const set = new Set(list)
+    return [...set]
+  }
+  const tempList = [] //重复数据
+  const map = new Map() //创建Map对象数据结构
+  // 遍历需要去重的数组对象
+  list.forEach(item => {
+    // 判断map对象中该key是否已经存在
+    if (!map.has(item[key])) {
+      map.set(item[key], item) //如果不存在，将该数据插入
+    } else {
+      tempList.push(item)
+    }
+  })
+  IsType('Function', callback) && callback(tempList)
+  return [...map.values()] //将map对象转换回数组再返回
+}
+
+/*******
+ * @description: 生成UUID
+ * UUID(Universally Unique IDentifier) 全局唯一标识符。
+ * UUID是一种由算法生成的二进制长度为128位的数字标识符。
+ * UUID的格式为“xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx”，
+ * 其中的 x 是 0-9 或 a-f 范围内的一个32位十六进制数。
+ * 在理想情况下，任何计算机和计算机集群都不会生成两个相同的UUID。
+ * @author: 琴时
+ * @param {String} symbol [分隔符] [默认为空]
+ * @return {String}
+ * @example: createUUID('-') // 生成UUID并使用[-]作为分隔符
+ */
+export const createUUID = (symbol = '') => {
+  let s = []
+  const hexDigits = '0123456789abcdef'
+  for (let i = 0; i < 36; i++) {
+    s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1)
+  }
+  s[14] = '4' // bits 12-15 of 时间和版本字段设置为0010
+  s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1) // bits 6-7 of the clock_seq_hi_and_reserved to 01
+  s[8] = s[13] = s[18] = s[23] = '-'
+  return s.join('').replace(/-/g, symbol)
+}

@@ -10,15 +10,35 @@ npm install pt-tools --save
 
 ### 使用
 
-### pt-tools 版本更新记录
+```js
+import { functionName } from 'pt-tools'
+```
 
-##### 当前最新版本：0.0.1
+### pt-tools 已有功能
 
-##### 版本修改记录
+| 名称                            | API             | 说明 |
+| ------------------------------- | --------------- | ---- |
+| 阿拉伯数字转中文数字            | numToChinese    |      |
+| 金额格式化                      | moneyFormat     |      |
+| 时间格式化                      | dateFormat      |      |
+| 获取时间间隔                    | getTimeDistance |      |
+| 转换时间戳                      | timeStamp       |      |
+| 获取倒计时                      | countDown       |      |
+| store2-localStorage缓存         | local           |      |
+| store2-sessionStorage缓存       | session         |      |
+| 设置过期时间                    | setExpires      |      |
+| 获取过期状态                    | getExpires      |      |
+| 变量类型判断                    | IsType          |      |
+| 深拷贝变量                      | deepCopy        |      |
+| 数组去重                        | deWeightArray   |      |
+| 校验空值参数                    | isEmpty         |      |
+| 校验两个参数是否相等            | isEqual         |      |
+| 生成UUID                        | createUUID      |      |
+| 下载流文件                      | downloadStream  |      |
+| 将定制txt文件内容转化成数组对象 | textTransform   |      |
+|                                 |                 |      |
+|                                 |                 |      |
+|                                 |                 |      |
+|                                 |                 |      |
+|                                 |                 |      |
 
-#### V0.0.1—2024 年 5 月 14 日
-
-1. 初始化工具库---测试版
-2. 添加常用类方法
-3. 添加转换类方法
-4. 添加时间类方法
