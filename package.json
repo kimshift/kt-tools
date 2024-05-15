@@ -1,6 +1,6 @@
 {
   "name": "pt-tools",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "基于vite构建的前端工具库",
   "main": "lib/pt-tools.mjs",
   "scripts": {
