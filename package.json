@@ -1,7 +1,7 @@
 {
   "name": "pt-tools",
   "version": "0.0.1",
-  "description": "前端开发工具箱",
+  "description": "基于vite构建的前端工具库",
   "main": "index.js",
   "scripts": {
     "start": "sh start.sh",
@@ -10,17 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kimshift/pt-utils-js.git"
+    "url": "git+https://github.com/kimshift/pt-tools.git"
   },
   "bugs": {
-    "url": "https://github.com/kimshift/pt-utils-js/issues"
+    "url": "https://github.com/kimshift/pt-tools/issues"
   },
   "keywords": [
     "pt",
+    "tools",
     "utils",
     "es6",
-    "javascript",
-    "tools"
+    "javascript"
   ],
   "author": "kimshift",
   "license": "ISC",
