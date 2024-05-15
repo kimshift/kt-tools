@@ -1,5 +1,5 @@
 {
-  "name": "pt-utils-js",
+  "name": "pt-tools",
   "version": "0.0.1",
   "description": "前端开发工具箱",
   "main": "index.js",
@@ -12,9 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/kimshift/pt-utils-js.git"
   },
+  "bugs": {
+    "url": "https://github.com/kimshift/pt-utils-js/issues"
+  },
   "keywords": [
-    "javascript",
+    "pt",
     "utils",
+    "es6",
+    "javascript",
     "tools"
   ],
   "author": "kimshift",
@@ -25,8 +30,8 @@
   ],
   "exports": {
     ".": {
-      "import": "./lib/js-utils.mjs",
-      "require": "./lib/js-utils.umd.js"
+      "import": "./lib/pt-utils-js.mjs",
+      "require": "./lib/pt-utils-js.umd.js"
     }
   },
   "devDependencies": {

@@ -1,16 +1,16 @@
 ### 项目名称
 
-> pt-utils-js —— 前端工具库
+> pt-tools —— 前端工具库
 
 ### 安装
 
 ```sh
-npm install pt-utils-js --save
+npm install pt-tools --save
 ```
 
 ### 使用
 
-### pt-utils-js 版本更新记录
+### pt-tools 版本更新记录
 
 ##### 当前最新版本：0.0.1
 
