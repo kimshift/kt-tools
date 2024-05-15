@@ -23,7 +23,7 @@ npm run build
 
 # 提交到远程仓库
 git push origin master
-git push origin refs/tags/v$version # 提交 tag 到远程仓库
+# git push origin refs/tags/v$version # 提交 tag 到远程仓库
 echo "version: v$version 发布中..."
 if [[ $version =~ [beta] ]]; then # 如果版本号包含 beta  则发布到 bate 分支
   echo "version: v$version 发布到 beta 分支"

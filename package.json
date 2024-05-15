@@ -2,7 +2,7 @@
   "name": "pt-tools",
   "version": "0.0.3",
   "description": "基于vite构建的前端工具库",
-  "main": "index.js",
+  "main": "lib/pt-tools.mjs",
   "scripts": {
     "start": "sh start.sh",
     "build": "sh build/build.sh",
@@ -28,12 +28,6 @@
     "README.md",
     "lib/"
   ],
-  "exports": {
-    ".": {
-      "import": "./lib/pt-tools.mjs",
-      "require": "./lib/pt-tools.umd.js"
-    }
-  },
   "devDependencies": {
     "vite": "^5.2.0"
   },
