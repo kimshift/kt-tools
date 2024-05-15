@@ -30,8 +30,8 @@
   ],
   "exports": {
     ".": {
-      "import": "./lib/pt-utils-js.mjs",
-      "require": "./lib/pt-utils-js.umd.js"
+      "import": "./lib/pt-tools.mjs",
+      "require": "./lib/pt-tools.umd.js"
     }
   },
   "devDependencies": {
