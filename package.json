@@ -1,7 +1,7 @@
 {
-  "name": "pt-tools",
+  "name": "zepplife",
   "version": "0.0.4",
-  "description": "基于vite构建的前端工具库",
+  "description": "小米运动脚本",
   "main": "lib/pt-tools.mjs",
   "scripts": {
     "start": "sh start.sh",
@@ -10,16 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kimshift/pt-tools.git"
+    "url": "https://github.com/kimshift/kt-tools/tree/zepplife"
   },
   "bugs": {
-    "url": "https://github.com/kimshift/pt-tools/issues"
+    "url": "https://github.com/kimshift/kt-tools/issues"
   },
   "keywords": [
-    "pt",
-    "tools",
-    "utils",
-    "es6",
+    "kt",
+    "zepplife",
     "javascript"
   ],
   "author": "kimshift",
@@ -32,6 +30,7 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
-    "store2": "^2.14.3"
+    "axios": "^1.7.2",
+    "fs": "0.0.1-security"
   }
 }
