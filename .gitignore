@@ -21,3 +21,5 @@ lib
 *.njsproj
 *.sln
 *.sw?
+
+test/*.txt
